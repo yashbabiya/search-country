@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import './header';
+@import './card';
+@import './page';
+@import './search';
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    color:black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// html[theme='dark-mode'] {
+//   filter: invert(1) hue-rotate(180deg);
+// }
+h1{
+  font-size: 1.5rem;
+}
+.hide{
+  display: none;
+}
+Link,a{
+  text-decoration: none;
+}
+body{
+  
+  background-color: hsl(0, 0%, 98%);
+
+}
+.App {
+  text-align: center;
+  background-color: hsl(0, 0%, 98%);
+
+}
+@media screen and (max-width:637px){
+  body{
+    font-size: 14px;
+  }
+  .container{
+    width:100%;
+    // background-color: yellow;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+  h1{
+
+    font-size: 1rem;
+  }
+  a{
+    width:100%;
+  }
+  .card{
+    width:unset;
+    flex:1;
+  }
+  .input{
+    width: 100%;
+    input{
+    width: 100%;
+
+    }
+    margin-bottom: 1em;
+  }
+  section{
+    flex-direction: column;
+  }
+  .cont{
+    flex-direction: column;
+    .img{
+      margin:1em 0;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+      }
+    }
+    .info{
+      flex-direction: column;
+      width:100%;
+      .in-info{
+      flex-direction: column;
+      width:100%;
+      
+      }
+    }
+  }
+  
+
+
+}
+
+
